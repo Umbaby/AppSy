@@ -1,2 +1,2 @@
-# AppSy
+# AppSys
 Personal Webpage Repository
