@@ -28,26 +28,44 @@
 		
 		.button1 {
 			background-color: rgba(255, 0, 0, 0.5);
+			animation-name: animation;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button2 {
 			background-color: rgba(255, 102, 0, 0.5);
+			animation-name: animation2;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button3 {
 			background-color: rgba(255, 255, 0, 0.5);
+			animation-name: animation3;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button4 {
 			background-color: rgba(0, 153, 0, 0.5);
+			animation-name: animation4;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button5 {
 			background-color: rgba(0, 0, 255, 0.5);
+			animation-name: animation5;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button6 {
  			background-color: rgba(75, 0, 130, 0.5);
+			animation-name: animation6;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
 		}
 		
 		.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
@@ -56,6 +74,60 @@
 			-moz-transition: background-color 0.5s;
 			-o-transition: background-color 0.5s;
 			transition: background-color 0.5s;
+		}
+		
+		@keyframes animation {
+		0% {background-color: rgba(255, 102, 0, 0.5);}
+		20% {background-color: rgba(255, 255, 0, 0.5);}
+		40% {background-color: rgba(0, 153, 0, 0.5);}
+		60% {background-color: rgba(0, 0, 255, 0.5);}
+		80% {background-color: rgba(75, 0, 130, 0.5);}
+		100% {background-color: rgba(255, 0, 0, 0.5);}
+		}
+		
+		@keyframes animation2 {	
+		0% {background-color: rgba(255, 255, 0, 0.5);}
+		20% {background-color: rgba(0, 153, 0, 0.5);}
+		40% {background-color: rgba(0, 0, 255, 0.5);}
+		60% {background-color: rgba(75, 0, 130, 0.5);}
+		80% {background-color: rgba(255, 0, 0, 0.5);}
+		100% {background-color: rgba(255, 102, 0, 0.5);}
+		}
+		
+		@keyframes animation3 {
+		0% {background-color: rgba(0, 153, 0, 0.5);}
+		20% {background-color: rgba(0, 0, 255, 0.5);}
+		40% {background-color: rgba(75, 0, 130, 0.5);}
+		60% {background-color: rgba(255, 0, 0, 0.5);}
+		80% {background-color: rgba(255, 102, 0, 0.5);}
+		100% {background-color: rgba(255, 255, 0, 0.5);}
+		}
+		
+		@keyframes animation4 {
+		0% {background-color: rgba(0, 0, 255, 0.5);}
+		20% {background-color: rgba(75, 0, 130, 0.5);}
+		40% {background-color: rgba(255, 0, 0, 0.5);}
+		60% {background-color: rgba(255, 102, 0, 0.5);}
+		80% {background-color: rgba(255, 255, 0, 0.5);}
+		100% {background-color: rgba(0, 153, 0, 0.5);}
+		}
+		
+		@keyframes animation5 {
+		0% {background-color: rgba(75, 0, 130, 0.5);}
+		20% {background-color: rgba(255, 0, 0, 0.5);}
+		40% {background-color: rgba(255, 102, 0, 0.5);}
+		60% {background-color: rgba(255, 255, 0, 0.5);}
+		80% {background-color: rgba(0, 153, 0, 0.5);}
+		100% {background-color: rgba(0, 0, 255, 0.5);}
+		}
+		
+		@keyframes animation6 {
+		0% {background-color: rgba(255, 0, 0, 0.5);}
+		20% {background-color: rgba(255, 102, 0, 0.5);}
+		40% {background-color: rgba(255, 255, 0, 0.5);}
+		60% {background-color: rgba(0, 153, 0, 0.5);}
+		80% {background-color: rgba(0, 0, 255, 0.5);}
+		100% {background-color: rgba(75, 0, 130, 0.5);}
 		}
 		</style>
     </head> 
