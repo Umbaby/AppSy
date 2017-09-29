@@ -4,7 +4,6 @@
 		<title>Social Life</title>
 		<style>
 			body{
-				background-image: url('images/bg3.jpg');
 				background-repeat: no-repeat;
 				background-attachment: fit;
 				background-size: 100%;
@@ -19,23 +18,29 @@
 			100% {background-color: rgba(75, 0, 130, 0.5);}
 			}
 			
-			.social_button { 
+			.social_button, .other { 
 			border: none;
+			border-radius: 5px;
 			color: black;
-			padding: 36px 0px;
+			padding: 10px 0px;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-			font-size: 31px;
+			font-size: 20px;
 			cursor: pointer;
 			float: left;
-			width: 100%;
 			font-weight: bold;
 			font-family: courier;
 			background-color: rgba(255, 102, 0, 0.5);
 			animation-name: color;
 			animation-duration: 6s;
 			animation-iteration-count: infinite;
+			width: 180px;
+			margin: 10px 5px;
+			}
+			
+			.social_button {
+			text-decoration: underline;
 			}
 			
 			.social_button:hover {
@@ -44,11 +49,27 @@
 			-moz-transition: background-color 0.5s;
 			-o-transition: background-color 0.5s;
 			transition: background-color 0.5s;
-		}
+			}
+			
+			.header {
+			border-bottom: 2px solid #ccc;
+			float: left;
+			}
 		</style>
 	</head>
 
 	<body>
-		<a class="social_button" href="appsys.html">Social Life</a>
+		<div class="header">
+		<a class="other" href="appsys.html">#Home</a>
+		<a class="other" href="personal.html">#Personal Info</a>
+		<a class="social_button" href="social.html">#Social Life</a>
+		<a class="other" href="achievements.html">#Achievements</a>
+		<a class="other" href="goals.html">#Goals</a>
+		<a class="other" href="hobbies.html">#Hobbies</a>
+		<a class="other" href="favorites.html">#Favorites</a>
+		</div>
+		<div class="content">
+			
+		</div>
 	</body>
 </html>
