@@ -10,6 +10,15 @@
 				background-image: url('images/bg3.jpg');
 			}
 			
+			@keyframes color {
+			0% {background-color: rgba(255, 0, 0, 0.5);}
+			20% {background-color: rgba(255, 102, 0, 0.5);}
+			40% {background-color: rgba(255, 255, 0, 0.5);}
+			60% {background-color: rgba(0, 153, 0, 0.5);}
+			80% {background-color: rgba(0, 0, 255, 0.5);}
+			100% {background-color: rgba(75, 0, 130, 0.5);}
+			}
+			
 			.buttonlink:hover {
 			background-color: rgba(255, 0, 0, 0);
 			-webkit-transition: background-color 0.5s;
@@ -21,17 +30,40 @@
 			.buttonlink { 
 			border: none;
 			color: black;
-			padding: 36px 0px;
+			padding: 25px 0px;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-			font-size: 31px;
+			font-size: 25px;
 			cursor: pointer;
 			float: left;
 			width: 100%;
 			font-weight: bold;
 			font-family: courier;
 			background-color: rgba(255, 0, 0, 0.5);
+			animation-name: color;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+			}
+			
+			.home {
+			border: none;
+			color: black;
+			padding: 10px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 25px;
+			cursor: pointer;
+			float: left;
+			width: 150px;
+			margin: 0px 130px;
+			font-weight: bold;
+			font-family: courier;
+			background-color: rgba(255, 0, 0, 0.5);
+			animation-name: color;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
 			}
 			
 			div.content {
@@ -39,10 +71,38 @@
 			border: 0px;
 			float: left;
 			width: 410px;
+			margin: 6px 21px;
+			}
+			
+			div.content2{
+			background-color: rgba(128, 128, 128, 0);
+			border: 0px;
+			float: left;
+			width: 410px;
 			margin: 6px;
+			padding: 5px 5px 0px 5px;
+			}
+			
+			div.content3 {
+			background-color: rgba(128, 128, 128, 0);
+			border: 0px;
+			float: left;
+			width: 410px;
+			margin: 6px;
+			padding: 5px 5px 0px 5px;
 			}
 			
 			div.content:hover {
+			background-color: rgba(128, 128, 128, 0.5);
+			margin: 5px 20px;
+			border: 1px solid #808080;
+			-webkit-transition: background-color 0.5s;
+			-moz-transition: background-color 0.5s;
+			-o-transition: background-color 0.5s;
+			transition: background-color 0.5s;
+			}
+			
+		    div.content2:hover, div.content3:hover {
 			background-color: rgba(128, 128, 128, 0.5);
 			margin: 5px;
 			border: 1px solid #808080;
@@ -52,8 +112,13 @@
 			transition: background-color 0.5s;
 			}
 			
-			h4, img {
-			padding: 5px;
+			p, img {
+			padding: 5px 5px 0px 5px;
+			}
+			
+			p{
+			font-weight: 900;
+			font-family: courier;
 			}
 		</style>
 	</head>
@@ -62,15 +127,23 @@
 		<a class="buttonlink" href="appsys.html">Personal Information</a>
 		<div class="content">
 			<img src="images/me.jpg" alt="Me" width="400" height="300">
-			<h4>Name: Jhon Danielle L. Umbay</h4>
-			<h4>Gender: Male</h4>
-			<h4>Age: 19 years old</h4>
-			<h4>Course: Bachelor of Science in Computer Science</h4>
-			<h4>Year: 3rd year</h4>
-			<h4>School: University of Southeastern Philippines</h4>
+			<p>Name: Jhon Danielle L. Umbay</p>
+			<p>Gender: Male</p>
+			<p>Age: 19 years old</p>
+			<p>Course&Year: Bachelor of Science in Computer Science, 3rd year</p>
+			<p>School: University of Southeastern Philippines</p>
 		</div>
-		<div class="content">
-		
+		<div class="content2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2078.545515495094!2d125.65657409321672!3d7.155200898363585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9697c684ed021%3A0xb24d8a2e9dd2dbcf!2sKm+14+Panacan%2C+Bunawan%2C+Davao+City%2C+8000+Davao+del+Sur!5e1!3m2!1sen!2sph!4v1506593663622" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<p>Complete Address: Blk. 1 Lot 3, Celedonia Village</p>
+			<p>Panacan, Davao City</p>
 		</div>
+		<div class="content3">
+			<img src="images/contact.jpg" alt="Contact" width="400" height="300">
+			<p>Facebook: url=www.facebook.com/DanielJhon06 username=Jhon Jhon</p>
+			<p>Email: jdlu101@gmail.com</p>
+			<p>Mobile #: 09227810339</p>
+		</div>
+		<a class="home" href="appsys.html">Home</a>
 	</body>
 </html>
