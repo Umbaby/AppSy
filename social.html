@@ -10,6 +10,15 @@
 				background-size: 100%;
 			}
 			
+			@keyframes color {
+			0% {background-color: rgba(255, 0, 0, 0.5);}
+			20% {background-color: rgba(255, 102, 0, 0.5);}
+			40% {background-color: rgba(255, 255, 0, 0.5);}
+			60% {background-color: rgba(0, 153, 0, 0.5);}
+			80% {background-color: rgba(0, 0, 255, 0.5);}
+			100% {background-color: rgba(75, 0, 130, 0.5);}
+			}
+			
 			.social_button { 
 			border: none;
 			color: black;
@@ -24,6 +33,9 @@
 			font-weight: bold;
 			font-family: courier;
 			background-color: rgba(255, 102, 0, 0.5);
+			animation-name: color;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
 			}
 			
 			.social_button:hover {
