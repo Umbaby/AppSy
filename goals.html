@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Goals & Ambitions</title>
+		<title>Goals</title>
 		<style>
 			body{
-				background-image: url('images/bg3.jpg');
 				background-repeat: no-repeat;
 				background-attachment: fit;
 				background-size: 100%;
@@ -19,23 +18,29 @@
 			100% {background-color: rgba(75, 0, 130, 0.5);}
 			}
 			
-			.button1 { 
+			.button1, .other {
 			border: none;
+			border-radius: 5px;
 			color: black;
-			padding: 36px 0px;
+			padding: 10px 0px;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-			font-size: 31px;
+			font-size: 20px;
 			cursor: pointer;
 			float: left;
-			width: 100%;
 			font-weight: bold;
 			font-family: courier;
-			background-color: rgba(0, 153, 0, 0.5);
+			background-color: rgba(255, 102, 0, 0.5);
 			animation-name: color;
 			animation-duration: 6s;
 			animation-iteration-count: infinite;
+			width: 180px;
+			margin: 10px 5px;
+			}
+			
+			.button1 {
+			text-decoration: underline;
 			}
 			
 			.button1:hover {
@@ -44,11 +49,24 @@
 			-moz-transition: background-color 0.5s;
 			-o-transition: background-color 0.5s;
 			transition: background-color 0.5s;
-		}
+			}
+			
+			.header {
+			border-bottom: 2px solid #ccc;
+			float: left;
+			}
 		</style>
 	</head>
 
 	<body>
-		<a class="button1" href="appsys.html">Goals & Ambitions</a>
+		<div class="header">
+		<a class="other" href="appsys.html">#Home</a>
+		<a class="other" href="personal.html">#Personal Info</a>
+		<a class="other" href="social.html">#Social Life</a>
+		<a class="other" href="achievements.html">#Achievements</a>
+		<a class="button1" href="goals.html">#Goals</a>
+		<a class="other" href="hobbies.html">#Hobbies</a>
+		<a class="other" href="favorites.html">#Favorites</a>
+		</div>
 	</body>
 </html>
