@@ -79,6 +79,8 @@
 			font-size: 18px;
 			transition: 0.6s ease;
 			border-radius: 0 3px 3px 0;
+			background-color: rgba(0,0,0,0.4);
+			cursor:pointer;
 			}
 			
 			.next {
@@ -96,8 +98,9 @@
 			padding: 8px 12px;
 			position: absolute;
 			bottom: 8px;
-			width: 100%;
+			width: 97%;
 			text-align: center;
+			background-color: rgba(128, 128, 128, 0.8);
 			}
 			
 			.number {
@@ -106,6 +109,9 @@
 			  padding: 8px 12px;
 			  position: absolute;
 			  top: 10px;
+			  background-color: rgba(128, 128, 128, 0.8);
+			  border-radius: 4px;
+			  margin: 5px;
 			}
 			
 			.dot {
@@ -142,11 +148,21 @@
 			
 			.gallery {
 			float: left;
-			margin: 10px 300px 10px 300px;
+			margin: 10px 0px 10px 30px;
 			border: 2px solid #808080;
 			padding: 5px;
 			border-radius: 5px;
 			background-color: rgba(128, 128, 128, 0.3);
+			}
+			
+			.message {
+			float: left;
+			margin: 10px 0px 10px 40px;
+			border: 2px solid #808080;
+			padding: 5px;
+			border-radius: 5px;
+			background-color: rgba(128, 128, 128, 0.3);
+			width: 400px;
 			}
 		</style>
 	</head>
@@ -164,33 +180,63 @@
 		<div class="gallery">
 		<div class="content">
 			<div class="slide img">
-				<div class="number">1/5</div>
+				<div class="number">1/10</div>
 				<img src="images/cheattime2.jpg" style="width:100%">
 				<div class="text">Birthday Celebration 2017</div>
 			</div>
 			
 			<div class="slide img">
-				<div class="number">2/5</div>
+				<div class="number">2/10</div>
 				<img src="images/babes-2.jpg" style="width:100%">
 				<div class="text">Christmas Mansion</div>
 			</div>
 			
 			<div class="slide img">
-				<div class="number">3/5</div>
+				<div class="number">3/10</div>
 				<img src="images/acquaintance2.jpg" style="width:100%">
 				<div class="text">Acquaintance 2014</div>
 			</div>
 			
 			<div class="slide img">
-				<div class="number">4/5</div>
+				<div class="number">4/10</div>
 				<img src="images/cherry@18-2.jpg" style="width:100%">
 				<div class="text">Debut Celebration 2016</div>
 			</div>
 			
 			<div class="slide img">
-				<div class="number">5/5</div>
+				<div class="number">5/10</div>
 				<img src="images/pippins8.jpg" style="width:100%">
 				<div class="text">Mock Wedding & Debut</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">6/10</div>
+				<img src="images/pippins10.jpg" style="width:100%">
+				<div class="text">Mock Wedding & Debut</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">7/10</div>
+				<img src="images/2014.jpg" style="width:100%">
+				<div class="text">Presentation in Filipino 2</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">8/10</div>
+				<img src="images/fun run.jpg" style="width:100%">
+				<div class="text">Color Fun Run</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">9/10</div>
+				<img src="images/felcris.jpg" style="width:100%">
+				<div class="text">@Felcris Centrale</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">10/10</div>
+				<img src="images/kadayawan.jpg" style="width:100%">
+				<div class="text">@San Pedro Street</div>
 			</div>
 			
 			<a class="prev" onclick="navigate(-1)">&#10094;</a>
@@ -204,8 +250,20 @@
 			<span class="dot" onclick="slide(3)"></span>
 			<span class="dot" onclick="slide(4)"></span>
 			<span class="dot" onclick="slide(5)"></span>
+			<span class="dot" onclick="slide(6)"></span>
+			<span class="dot" onclick="slide(7)"></span>
+			<span class="dot" onclick="slide(8)"></span>
+			<span class="dot" onclick="slide(9)"></span>
+			<span class="dot" onclick="slide(10)"></span>
 		</div>
 		</div>
+		
+		<div class="message">
+			<img src="images/cute.gif" alt="friends" width="400px" height="400px">
+			<hr>
+			<p>Treat your friends as treasures. Value them as you could hardly find one.</p>
+		</div>
+		
 		<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
