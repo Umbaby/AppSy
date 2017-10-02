@@ -55,6 +55,99 @@
 			border-bottom: 2px solid #ccc;
 			float: left;
 			}
+			
+			* {box-sizing: border:box}
+			
+			.content {
+			max-width: 800px;
+			position: relative;
+			margin:auto;
+			}
+			
+			.slide {
+			display: none;
+			}
+			
+			.prev, .next {
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			}
+			
+			.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+			}
+			
+			.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			}
+			
+			.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			}
+			
+			.number {
+			  color: black;
+			  font-size: 20px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 10px;
+			}
+			
+			.dot {
+			  cursor:pointer;
+			  height: 13px;
+			  width: 13px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+			
+			.img {
+			  -webkit-animation-name: img;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: img;
+			  animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			@keyframes img {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			.gallery {
+			float: left;
+			margin: 10px 300px 10px 300px;
+			border: 2px solid #808080;
+			padding: 5px;
+			border-radius: 5px;
+			background-color: rgba(128, 128, 128, 0.3);
+			}
 		</style>
 	</head>
 
@@ -68,8 +161,79 @@
 		<a class="other" href="hobbies.html">#Hobbies</a>
 		<a class="other" href="favorites.html">#Favorites</a>
 		</div>
+		<div class="gallery">
 		<div class="content">
+			<div class="slide img">
+				<div class="number">1/5</div>
+				<img src="images/cheattime2.jpg" style="width:100%">
+				<div class="text">Birthday Celebration 2017</div>
+			</div>
 			
+			<div class="slide img">
+				<div class="number">2/5</div>
+				<img src="images/babes-2.jpg" style="width:100%">
+				<div class="text">Christmas Mansion</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">3/5</div>
+				<img src="images/acquaintance2.jpg" style="width:100%">
+				<div class="text">Acquaintance 2014</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">4/5</div>
+				<img src="images/cherry@18-2.jpg" style="width:100%">
+				<div class="text">Debut Celebration 2016</div>
+			</div>
+			
+			<div class="slide img">
+				<div class="number">5/5</div>
+				<img src="images/pippins8.jpg" style="width:100%">
+				<div class="text">Mock Wedding & Debut</div>
+			</div>
+			
+			<a class="prev" onclick="navigate(-1)">&#10094;</a>
+			<a class="next" onclick="navigate(1)">&#10095;</a>
+		</div> 
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="slide(1)"></span>
+			<span class="dot" onclick="slide(2)"></span>
+			<span class="dot" onclick="slide(3)"></span>
+			<span class="dot" onclick="slide(4)"></span>
+			<span class="dot" onclick="slide(5)"></span>
 		</div>
+		</div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function navigate(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function slide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slide");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
 	</body>
 </html>
