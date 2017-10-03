@@ -7,6 +7,7 @@
 				background-repeat: no-repeat;
 				background-attachment: fit;
 				background-size: 100%;
+				
 			}
 			
 			@keyframes color {
@@ -51,26 +52,114 @@
 			transition: background-color 0.5s;
 			}
 			
-			.header {
+			header {
 			border-bottom: 2px solid #ccc;
 			float: left;
+			}
+			
+			.content, .content2, .content3 {
+			margin: 10px 0 10px 0;
+			padding: 4px;
+			border-radius: 2px;
+			border: 2px solid #808080;
+			float: left;
+			background-color: rgba(128, 128, 128, 0.3);
+			}
+			
+			.image, .big, .image2 {
+			margin: 3px;
+			}
+			
+			.small, .big, .big2, .image2 {
+			float: left;
+			}
+			
+			img {
+			border-radius: 5px;
+			}
+			
+			.text, .text2 {
+			float: left;
+			font-size: 30px;
+			}
+			
+			.text {
+			width: 99%;
+			padding: 3px 0 3px 5px;
+			} 
+			
+			.text2 {
+			padding: 3px 0 3px 1190px;
 			}
 		</style>
 	</head>
 
 	<body>
-		<div class="header">
+		<header>
 		<a class="other" href="appsys.html">#Home</a>
 		<a class="other" href="personal.html">#Personal Info</a>
 		<a class="other" href="social.html">#Social Life</a>
 		<a class="other" href="achievements.html">#Achievements</a>
-		<a class="button1" href="goals.html">#Goals</a>
+		<a class="button1" href="goals.html">#Travel Goals</a>
 		<a class="other" href="hobbies.html">#Hobbies</a>
 		<a class="other" href="favorites.html">#Favorites</a>
-		</div>
+		</header>
 		
 		<div class="content">
+		<div class="text">PARIS</div>
+		<div class="small">
+			<div class="image">
+			<img src="images/eiffel_night.jpeg" alt="Eiffel Tower" width="400" height="300">
+			</div>
+			<div class="image">
+			<img src="images/eiffel.png" alt="Eiffel Tower" width="400" height="300">
+			</div>
+		</div>
+		<div class="big">
+			<img src="images/eiffel2.jpg" alt="Eiffel Tower" width="909" height="606">
+		</div>
+		</div>
+		
+		<div class="content2">
+			<div class="text2">MT. FUJI</div>
+			<div class="small">
+				<div class="image">
+				<img src="images/mt fuji.jpg" alt="Mt. Fuji" width="800" height="400">
+				</div>
+				<div class="image">
+				<img src="images/mtfuji3.jpg" alt="Mt. Fuji" width="800" height="200">
+				</div>
+			</div>
 			
+			<div class="big2">
+				<div class="image">
+				<img src="images/mtfuji.jpg" alt="Mt. Fuji" width="508" height="300">
+				</div>
+				<div class="image">
+				<img src="images/mtfuji2.jpg" alt="Mt. Fuji" width="508" height="300">
+				</div>
+			</div>
+		</div>
+		
+		<div class="content3">
+			<div class="text">BATANES</div>
+			<div class="small">
+				<div class="image2">
+				<img src="images/batanes6.jpg" alt="Batanes" width="655" height="400">
+				</div>
+				<div class="image2">
+				<img src="images/batanes2.jpg" alt="Batanes" width="650" height="400">
+				</div>
+			</div>
+			
+			<div class="big2">
+				<div class="image2">
+				<img src="images/batanes5.jpg" alt="Batanes" width="600" height="380">
+				</div>
+				<div class="image2">
+				<img src="images/batanes.jpg" alt="Batanes" width="705" height="380">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
