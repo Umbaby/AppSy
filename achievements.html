@@ -4,9 +4,10 @@
 		<title>Achievements</title>
 		<style>
 			body{
+				background: url('images/plain.jpg');
+				background-attachment: fixed;
+				background-size: cover;
 				background-repeat: no-repeat;
-				background-attachment: fit;
-				background-size: 100%;
 			}
 			
 			@keyframes color {
@@ -58,27 +59,86 @@
 			
 			div.content {
 			float: left;
+			width: 500px;
+			height: 300px;
+			border: 2px solid #808080;
+			margin: 150px 20px 20px 20px;
+			border-radius: 5px;
+			background-image: url('images/medal.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			}
+			
+			div.trans {
+			  background-color: #ffffff;
+			  opacity: 0.6;
+			  width: 500px;
+			height: 287px;
+			}
+			
+			div.trans p {
+			  font-weight: bold;
+			  color: #000000;
+			}
+			
+			h1, p {
+			text-align: center;
+			font-family: verdana;
+			font-size: 20px;
+			}
+			
+			div.design, div.design2 {
+			border: 2px solid #808080;
+			float: left;
+			padding: 5px 5px 0 5px;
+			width: 300px;
+			border-radius: 5px;
+			}
+			
+			div.design {
+			margin: 20px 10px 20px 60px;
+			}
+			
+			div.design2 {
+			margin: 20px 0 20px 10px;
+			}
+			
+			img {
+			float: left;
+			margin: 0 0 5px 0;
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="header">
-		<a class="other" href="appsys.html">#Home</a>
+		<a class="other" href="index.html">#Home</a>
 		<a class="other" href="personal.html">#Personal Info</a>
 		<a class="other" href="social.html">#Social Life</a>
 		<a class="button1" href="achievements.html">#Achievements</a>
 		<a class="other" href="goals.html">#Travel Goals</a>
-		<a class="other" href="hobbies.html">#Hobbies</a>
+		<a class="other" href="hobbies.html">#Hobby</a>
 		<a class="other" href="favorites.html">#Favorites</a>
 		</div>
 		
+		<div class="design">
+			<img src="images/cute2.gif" alt="gif" width="300px" height="300px">
+			<img src="images/cute23.gif" alt="gif" width="300px" height="300px">
+		</div>
+		
 		<div class="content">
+			<div class="trans">
+			<h1>Awards</h1>
 			<p>Grade 1: With Merit</p>
 			<p>Grade 3: With Merit</p>
 			<p>Grade 4: With Merit</p>
-			<p>Grade 6: With Honor</p>
-			<p>Grade 6: 1st place; Math Competition</p> 
+			<p>Grade 6: With Honor, 1st place: Math Competition</p> 
+			</div>
+		</div>
+		
+		<div class="design2">
+			<img src="images/cute3.gif" alt="gif" width="300px" height="300px">
+			<img src="images/cute25.gif" alt="gif" width="300px" height="300px">
 		</div>
 	</body>
 </html>
