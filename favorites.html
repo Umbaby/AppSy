@@ -4,9 +4,10 @@
 		<title>Favorites</title>
 		<style>
 			body{
+				background: url('images/plain.jpg');
+				background-attachment: fixed;
+				background-size: cover;
 				background-repeat: no-repeat;
-				background-attachment: fit;
-				background-size: 100%;
 			}
 			
 			@keyframes color {
@@ -43,30 +44,128 @@
 			text-decoration: underline;
 			}
 			
-			.header {
-			border-bottom: 2px solid #ccc;
-			float: left;
-			}
-			
 			.button1:hover {
-			background-color: rgba(75, 0, 130, 0);
+			background-color: rgba(0, 153, 0, 0);
 			-webkit-transition: background-color 0.5s;
 			-moz-transition: background-color 0.5s;
 			-o-transition: background-color 0.5s;
 			transition: background-color 0.5s;
-		}
+			}
+			
+			header {
+			border-bottom: 2px solid #ccc;
+			float: left;
+			}
+			
+			.content, .content2, .content3 {
+			margin: 10px 0 10px 0;
+			padding: 4px;
+			border-radius: 2px;
+			border: 2px solid #808080;
+			float: left;
+			background-color: rgba(128, 128, 128, 0.3);
+			}
+			
+			.image, .big, .image2 {
+			margin: 3px;
+			}
+			
+			.small, .big, .big2, .image2 {
+			float: left;
+			}
+			
+			img {
+			border-radius: 5px;
+			}
+			
+			.text, .text2 {
+			float: left;
+			font-size: 30px;
+			}
+			
+			.text {
+			width: 99%;
+			padding: 3px 0 3px 5px;
+			} 
+			
+			.text2 {
+			padding: 3px 0 3px 1040px;
+			}
+			
+			img:hover {
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			transition: 1s;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div class="header">
-		<a class="other" href="appsys.html">#Home</a>
+		<header>
+		<a class="other" href="index.html">#Home</a>
 		<a class="other" href="personal.html">#Personal Info</a>
 		<a class="other" href="social.html">#Social Life</a>
 		<a class="other" href="achievements.html">#Achievements</a>
 		<a class="other" href="goals.html">#Travel Goals</a>
-		<a class="other" href="hobbies.html">#Hobbies</a>
+		<a class="other" href="hobbies.html">#Hobby</a>
 		<a class="button1" href="favorites.html">#Favorites</a>
+		</header>
+		
+		<div class="content">
+		<div class="text">FAVORITE FOOD</div>
+		<div class="small">
+			<div class="image">
+			<img src="images/ice-cream.jpg" alt="Ice Cream" width="400" height="300">
+			</div>
+			<div class="image">
+			<img src="images/binignit.jpg" alt="Binignit" width="400" height="300">
+			</div>
+		</div>
+		<div class="big">
+			<img src="images/pizza.jpg" alt="Pizza" width="909" height="606">
+		</div>
+		</div>
+		
+		<div class="content2">
+			<div class="text2">FAVORITE ARTISTS</div>
+			<div class="small">
+				<div class="image">
+				<img src="images/sam-smith.jpg" alt="Sam Smith" width="650" height="300">
+				</div>
+				<div class="image">
+				<img src="images/lorde.jpg" alt="Lorde" width="650" height="300">
+				</div>
+			</div>
+			
+			<div class="big2">
+				<div class="image">
+				<img src="images/jessiej.jpg" alt="Jessie J" width="658" height="300">
+				</div>
+				<div class="image">
+				<img src="images/bruno.jpg" alt="Bruno Mars" width="658" height="300">
+				</div>
+			</div>
+		</div>
+		
+		<div class="content3">
+			<div class="text">FAVORITE ANIME</div>
+			<div class="small">
+				<div class="image2">
+				<img src="images/naruto.jpg" alt="Naruto" width="655" height="400">
+				</div>
+				<div class="image2">
+				<img src="images/pikachu.gif" alt="Pikachu" width="650" height="400">
+				</div>
+			</div>
+			
+			<div class="big2">
+				<div class="image2">
+				<img src="images/doraemon.jpg" alt="Doraemon" width="705" height="380">
+				</div>
+				<div class="image2">
+				<img src="images/junjou-romantica-season-3-episode-12.png" alt="Junjou Romantica" width="600" height="380">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

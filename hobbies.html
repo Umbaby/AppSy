@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hobbies</title>
+		<title>Hobby</title>
 		<style>
 			body{
+				background: url('images/plain.jpg');
+				background-attachment: fixed;
+				background-size: cover;
 				background-repeat: no-repeat;
-				background-attachment: fit;
-				background-size: 100%;
 			}
 			
 			@keyframes color {
@@ -43,30 +44,86 @@
 			text-decoration: underline;
 			}
 			
-			.header {
-			border-bottom: 2px solid #ccc;
-			float: left;
-			}
-			
 			.button1:hover {
-			background-color: rgba(0, 0, 255, 0);
+			background-color: rgba(0, 153, 0, 0);
 			-webkit-transition: background-color 0.5s;
 			-moz-transition: background-color 0.5s;
 			-o-transition: background-color 0.5s;
 			transition: background-color 0.5s;
-		}
+			}
+			
+			header {
+			border-bottom: 2px solid #ccc;
+			float: left;
+			}
+			
+			.content, .content2, .content3 {
+			margin: 10px 0 10px 0;
+			padding: 4px;
+			border-radius: 2px;
+			border: 2px solid #808080;
+			float: left;
+			background-color: rgba(128, 128, 128, 0.3);
+			}
+			
+			.image, .big, .image2 {
+			margin: 3px;
+			}
+			
+			.small, .big, .big2, .image2 {
+			float: left;
+			}
+			
+			img {
+			border-radius: 5px;
+			}
+			
+			.text, .text2 {
+			float: left;
+			font-size: 30px;
+			}
+			
+			.text {
+			width: 99%;
+			padding: 3px 0 3px 5px;
+			} 
+			
+			.text2 {
+			padding: 3px 0 3px 1190px;
+			}
+			
+			img:hover {
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			transition: 1s;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div class="header">
-		<a class="other" href="appsys.html">#Home</a>
+		<header>
+		<a class="other" href="index.html">#Home</a>
 		<a class="other" href="personal.html">#Personal Info</a>
 		<a class="other" href="social.html">#Social Life</a>
 		<a class="other" href="achievements.html">#Achievements</a>
 		<a class="other" href="goals.html">#Travel Goals</a>
-		<a class="button1" href="hobbies.html">#Hobbies</a>
+		<a class="button1" href="hobbies.html">#Hobby</a>
 		<a class="other" href="favorites.html">#Favorites</a>
+		</header>
+		
+		<div class="content">
+		<div class="text">Listening to Music</div>
+		<div class="small">
+			<div class="image">
+			<iframe width="400" height="300" src="https://www.youtube.com/embed/J_ub7Etch2U" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="image">
+			<iframe width="400" height="300" src="https://www.youtube.com/embed/HCjNJDNzw8Y" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="big">
+			<iframe width="909" height="606" src="https://www.youtube.com/embed/3tmd-ClpJxA" frameborder="0" allowfullscreen></iframe>
+		</div>
 		</div>
 	</body>
 </html>
